@@ -1,12 +1,12 @@
 
 var list = [];
 
-
+//キー入力を受け付けるテスト
 function keypressHandler(event) {
 
     list.push(event.key);
     document.getElementById("test").innerHTML = list.join("");
-    
+
     return false;
 }
 
