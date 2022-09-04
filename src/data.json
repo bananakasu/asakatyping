@@ -3,43 +3,53 @@
     "questions": [
       {
         "name": "猪苗代湖",
-        "rubi": "いなわしろこ"
+        "rubi": "いなわしろこ",
+        "answer":"inawashiroko"
       },
       {
         "name": "宇倍神社 ",
-        "rubi": "うべじんじゃ"
+        "rubi": "うべじんじゃ",
+        "answer":"ubejinja"
       },
       {
         "name": "金刀比羅神社",
-        "rubi": "ことひらじんじゃ"
+        "rubi": "ことひらじんじゃ",
+        "answer":"kotohirajinja"
       },
       {
         "name": "開成館",
-        "rubi": "かいせいかん "
+        "rubi": "かいせいかん ",
+        "answer":"kaiseikan"
       },
       {
         "name": "安積開拓官舎 ",
-        "rubi": "あさかかいたくかんしゃ"
+        "rubi": "あさかかいたくかんしゃ",
+        "answer":"asakakaitakukansha"
       },
       {
         "name": "久留米水天宮 ",
-        "rubi": "くるめすいてんぐう"
+        "rubi": "くるめすいてんぐう",
+        "answer":"kurumesuitengu"
       },
       {
         "name": "金透記念館 ",
-        "rubi": "きんとうききねんかん"
+        "rubi": "きんとうききねんかん",
+        "answer":"kintokikinenkan"
       },
       {
         "name": "勝光 ",
-        "rubi": "かつみつ"
+        "rubi": "かつみつ",
+        "answer":"katsumitsu"
       },
       {
         "name": "国綱 ",
-        "rubi": "くにつな"
+        "rubi": "くにつな",
+        "answer":"kunitsuna"
       },
       {
         "name": "麓山公園",
-        "rubi": "はやまこうえん "
+        "rubi": "はやまこうえん ",
+        "answer":"hayamakoen"
       }
     ]
   }
