@@ -1,0 +1,55 @@
+{
+  "total": 10,
+  "questions": [
+    {
+      "name": "猪苗代湖",
+      "rubi": "いなわしろこ",
+      "answer": "inawashiroko"
+    },
+    {
+      "name": "宇倍神社 ",
+      "rubi": "うべじんじゃ",
+      "answer": "ubejinja"
+    },
+    {
+      "name": "金刀比羅神社",
+      "rubi": "ことひらじんじゃ",
+      "answer": "kotohirajinja"
+    },
+    {
+      "name": "開成館",
+      "rubi": "かいせいかん ",
+      "answer": "kaiseikan"
+    },
+    {
+      "name": "安積開拓官舎 ",
+      "rubi": "あさかかいたくかんしゃ",
+      "answer": "asakakaitakukansha"
+    },
+    {
+      "name": "久留米水天宮 ",
+      "rubi": "くるめすいてんぐう",
+      "answer": "kurumesuitengu"
+    },
+    {
+      "name": "金透記念館 ",
+      "rubi": "きんとうききねんかん",
+      "answer": "kintokikinenkan"
+    },
+    {
+      "name": "勝光 ",
+      "rubi": "かつみつ",
+      "answer": "katsumitsu"
+    },
+    {
+      "name": "国綱 ",
+      "rubi": "くにつな",
+      "answer": "kunitsuna"
+    },
+    {
+      "name": "麓山公園",
+      "rubi": "はやまこうえん ",
+      "answer": "hayamakoen"
+    }
+  ]
+}
