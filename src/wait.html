@@ -10,13 +10,20 @@
     <div class="container text-center" style="height: 100%;">
         <div class="mb-5 my-5 display-1">安積タイピング</div>
 
-        <div class="display-3"><kbd>Enter</kbd>キーで開始</div>
+        <!-- <div class="display-3"><kbd>Enter</kbd>キーで開始</div> -->
+        <div class="d-grid col-3 mx-auto">
+            <button class="btn btn-primary" type="button">スタート</button>
+        </div>
     </div>
     <script>
-        document.addEventListener("keydown", () => {
-            if (event.key == "Enter") {
-                location.href = "index.html";
-            }
+        // document.addEventListener("keydown", () => {
+        //     if (event.key == "Enter") {
+        //         location.href = "index.html";
+        //     }
+        // });
+        // const button = document.querySelector("button");
+        document.querySelector("button").addEventListener("click", event => {
+            location.href = "index.html";
         });
     </script>
 </body>
