@@ -7,11 +7,10 @@
 </head>
 <body>
     <div class="container text-center align-baseline" style="height: 100%;">
-        <div id="test">This is my first web page.</div>
-        <div class="progress">
-            <div class="progress-bar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="my-5 progress">
+            <div id="progress" class="progress-bar" style="width: 0%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="float-end">1/ 10</div><br>
+        <div class="float-end" id="remain">残り10問</div><br>
         <div class="d-grid gap-5">
 
             <div id="ruby"></div>
@@ -20,18 +19,7 @@
 
             <div id="answer"></div>
 
-
-            <ruby class="mb-auto display-1">
-
-                <mark>安</mark> <rp>(</rp><rt>A</rt><rp>)</rp>
-                積 <rp>(</rp><rt>saka</rt><rp>)</rp>
-                疎 <rp>(</rp><rt>so</rt><rp>)</rp>
-                水 <rp>(</rp><rt>sui</rt><rp>)</rp>
-            </ruby>
-    
-            <div class="mx-auto align-middle" id="">
-                <input type="text" class="form-control">
-            </div>
+            <div id="result"></div>
         </div>
     </div>
 

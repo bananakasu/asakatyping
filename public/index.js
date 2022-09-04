@@ -33,6 +33,11 @@ function keypressHandler(event) {
         console.log("NEXT");
         countQuestion++;
 
+        var prg = document.getElementById("progress");
+        prg.style.width = `${countQuestion * 10}%`;
+
+        var rem = document.getElementById("remain");
+        rem.textContent = `残り　${10 - countQuestion}問`;
         //最終問題の時
         if(countQuestion == data.questions.length){
             console.log("FINISH");
@@ -40,7 +45,7 @@ function keypressHandler(event) {
             document.getElementById("answer").textContent = "";
             document.getElementById("ruby").textContent = "";
 
-            // document.getElementById("result").textContent = "正解数：" + correctAnswerTypeNumber + "　ミスタイプ数：" + missTypeNum;
+            document.getElementById("result").textContent = "正解数：" + correctAnswerTypeNumber + "　ミスタイプ数：" + missTypeNum;
             return;
         }
         
@@ -96,4 +101,4 @@ setHtmlQuestion(data.questions[countQuestion].name);
 setHtmlRuby(data.questions[countQuestion].rubi);
 
 //キープレスイベント
-document.addEventListener("keypress", keypressHandler)
+document.addEventListener("keypress", keypressHandler);
