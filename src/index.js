@@ -1,21 +1,69 @@
+var inputKeyList = [];
 
-var list = [];
+var num = 0;
 
-
+//キー入力を受け付けるテスト
 function keypressHandler(event) {
 
-    list.push(event.key);
-    document.getElementById("test").innerHTML = list.join("");
+    let inputKey = event.key
+
     
+    inputKeyList.push(inputKey);
+
+    console.log(num);
+    console.log(isKeyCorrectAnswer(inputKey,num));
+
+
+    if(isKeyCorrectAnswer(inputKey,num)){
+        num++;
+    }
+
+
+    document.getElementById("anser").textContent = inputKeyList.join("");
+
     return false;
 }
 
 
+//HTMLに問題をセット
+function setQuestion(question) {
+    document.getElementById("question").textContent = question;
+}
 
-let test = document.getElementById("test");
+//HTMLにルビをセット
+function setRuby(ruby){
+    document.getElementById("ruby").textContent = ruby;
+}
 
-test.textContent = "Hello World!";
 
-test.style.color = "red";
+function isKeyCorrectAnswer(inputKey,number) {
 
-document.addEventListener("keypress", keypressHandler);
+    if (inputKey == getAnswer()[number]) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+function getAnswer() {
+    let answer = "asakazinja";
+
+    let split_answer = answer.split("")
+
+    return split_answer;
+}
+
+
+setQuestion("安積疏水");
+setRuby("あさかそすいじんじゃ");
+
+
+
+let split_answer = getAnswer();
+console.log(split_answer);
+
+
+document.addEventListener("keypress", keypressHandler)
+
