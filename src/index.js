@@ -2,24 +2,41 @@ var inputKeyList = [];
 
 var num = 0;
 
+var jsonData = require("./data.json");
+
+const data = JSON.parse(jsonData);
+
+console.log(data);
+
+function getJsonFile(){
+    let request = new XMLHttpRequest();
+    request.open("GET", "./data.json", false);
+    request.send();
+    return request
+}
+
 //キー入力を受け付けるテスト
 function keypressHandler(event) {
 
     let inputKey = event.key
 
     
-    inputKeyList.push(inputKey);
+    let answer = getAnswer();
 
-    console.log(num);
-    console.log(isKeyCorrectAnswer(inputKey,num));
 
 
     if(isKeyCorrectAnswer(inputKey,num)){
+        inputKeyList.push(inputKey);
         num++;
     }
 
+    //全問正解したとき
+    if(answer.length == num){
+        console.log("正解");
+    }
 
-    document.getElementById("anser").textContent = inputKeyList.join("");
+
+    document.getElementById("answer").textContent = inputKeyList.join("");
 
     return false;
 }
@@ -48,7 +65,7 @@ function isKeyCorrectAnswer(inputKey,number) {
 }
 
 function getAnswer() {
-    let answer = "asakazinja";
+    let answer = "asakasosuizinzya";
 
     let split_answer = answer.split("")
 
@@ -56,7 +73,7 @@ function getAnswer() {
 }
 
 
-setQuestion("安積疏水");
+setQuestion("安積疏水神社");
 setRuby("あさかそすいじんじゃ");
 
 
