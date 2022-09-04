@@ -33,6 +33,18 @@ function keypressHandler(event) {
         console.log("NEXT");
         countQuestion++;
 
+        //最終問題の時
+        if(countQuestion == data.questions.length){
+            console.log("FINISH");
+            document.getElementById("question").textContent = "FINISH";
+            document.getElementById("answer").textContent = "";
+            document.getElementById("ruby").textContent = "";
+
+            // document.getElementById("result").textContent = "正解数：" + correctAnswerTypeNumber + "　ミスタイプ数：" + missTypeNum;
+            return;
+        }
+        
+
         //次の問題をセット
         setHtmlQuestion(data.questions[countQuestion].name);
         setHtmlRuby(data.questions[countQuestion].rubi);
