@@ -1,0 +1,25 @@
+.text {
+    /*text-align: center;*/
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    color: aqua;
+}
+
+h1 {
+    text-align: center;
+}
+
+ruby {
+    font-size: 2em;
+    ruby-align: center;
+}
+
+#ex {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
