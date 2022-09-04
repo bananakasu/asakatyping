@@ -39,6 +39,7 @@ function keypressHandler(event) {
         var rem = document.getElementById("remain");
         rem.textContent = `残り　${10 - countQuestion}問`;
         //最終問題の時
+
         if(countQuestion == data.questions.length){
             console.log("FINISH");
             document.getElementById("question").textContent = "FINISH";
